@@ -1,0 +1,4 @@
+C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.dll
+C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.pdb
+C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.dll
+C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.pdb
