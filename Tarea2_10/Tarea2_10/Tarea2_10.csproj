@@ -51,6 +51,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DatabaseTarea2.mdf" />
+    <Content Include="App_Data\DatabaseTarea2_log.ldf">
+      <DependentUpon>DatabaseTarea2.mdf</DependentUpon>
+    </Content>
     <Content Include="IngresoSistema.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
@@ -78,6 +82,7 @@
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

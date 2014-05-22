@@ -55,13 +55,20 @@
         {
             width: 84px;
         }
+        .style11
+        {
+            font-size: x-large;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="font-size: medium; font-weight: 700">
+    <div style="font-weight: 700" class="style11">
     
-        Registro de nuevo usuario:</div>
+        Registro de nuevo usuario:<br />
+        <br />
+    </div>
     <table class="style1">
         <tr>
             <td class="style2">
@@ -115,6 +122,10 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                     ControlToValidate="TextBoxFecha" ErrorMessage="Campo obligatorio." 
                     ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            &nbsp;<br />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                    ControlToValidate="TextBoxFecha" ErrorMessage="Fecha inválida." 
+                    ForeColor="#CC0000" ValidationExpression="\d{4}-\d{2}-\d{2}"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -123,13 +134,13 @@
             <td class="style6">
                 <asp:DropDownList ID="DropDownListSexo" runat="server" Width="200px">
                     <asp:ListItem>Seleccione una opción...</asp:ListItem>
-                    <asp:ListItem>Masculino</asp:ListItem>
-                    <asp:ListItem>Femenino</asp:ListItem>
+                    <asp:ListItem>Hombre</asp:ListItem>
+                    <asp:ListItem>Mujer</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td class="style3">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
-                    ControlToValidate="DropDownListSexo" ErrorMessage="Campo obligatorio." 
+                    ControlToValidate="DropDownListSexo" ErrorMessage="Debe seleccionar una opción." 
                     ForeColor="#CC0000" InitialValue="Seleccione una opción..."></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -140,17 +151,25 @@
                 <asp:TextBox ID="TextBoxAvatar" runat="server" Width="200px"></asp:TextBox>
             </td>
             <td>
-                &nbsp;</td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+                    ControlToValidate="TextBoxAvatar" ErrorMessage="Campo obligatorio." 
+                    ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="style10">
             </td>
             <td class="style8">
+                <asp:Button ID="ButtonFinalizar" runat="server" onclick="ButtonFinalizar_Click" 
+                    Text="Finalizar" Width="90px" />
             </td>
             <td class="style9">
-                <input id="Reset1" type="reset" value="Reset" /></td>
+                <input id="Reset1" type="reset" value="Reset" /> (Limpiar campos)</td>
         </tr>
     </table>
+    <asp:SqlDataSource ID="SqlDataSourceRegistration" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:RegistroConnectionString %>" 
+        SelectCommand="SELECT * FROM [Usuario]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
