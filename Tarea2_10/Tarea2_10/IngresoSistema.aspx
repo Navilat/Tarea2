@@ -28,12 +28,14 @@
         <table class="style1">
             <tr>
                 <td align="center" class="style2">
-                    <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" />
+                    <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" 
+                        onclick="Button1_Click" Width="180px" />
                 </td>
             </tr>
             <tr>
                 <td align="center" class="style3">
-                    <asp:Button ID="Button2" runat="server" Text="Registrarse" />
+                    <asp:Button ID="Button2" runat="server" Text="Registrarse" 
+                        onclick="Button2_Click" Width="180px" />
                 </td>
             </tr>
             <tr>
