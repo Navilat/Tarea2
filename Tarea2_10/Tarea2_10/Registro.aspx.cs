@@ -16,6 +16,7 @@ namespace Tarea2_10
         {
             if(IsPostBack)
             {
+                /*
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistroConnectionString"].ConnectionString);
                 conn.Open();
                 String validar_user = "select count(*) from Usuario where nombre = '"+TextBoxNombre.Text+"'";
@@ -27,6 +28,7 @@ namespace Tarea2_10
                 }
 
                 conn.Close();
+                */
             }
         }
 
@@ -42,8 +44,22 @@ namespace Tarea2_10
 
                 conn.Close();
 
+                //----nuevo
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistroConnectionString"].ConnectionString);
                 conn.Open();
+                String validar_user = "select count(*) from Usuario where nombre = '"+TextBoxNombre.Text+"'";
+                command = new SqlCommand(validar_user, conn);
+                int contador = Convert.ToInt32(command.ExecuteScalar().ToString());
+                if(contador == 1)
+                {
+                    Response.Write("Nombre de usuario ya existe!");
+                    conn.Close();
+                    return;
+                }
+                conn.Close();
+                //------------
 
+                conn.Open();
                 String insertar_usuario = "insert into Usuario (id_usuario, id_grupo, nombre, contraseña, cantidad_comentarios, avatar_url, sexo, fecha_nacimiento, fecha_registro) values ("+contador2+","+2+",'"+TextBoxNombre.Text+"','"+TextBoxContra.Text+"',"+0+",'"+TextBoxAvatar.Text+"','"+DropDownListSexo.SelectedItem.ToString()+"', '"+TextBoxFecha.Text+"', CURRENT_TIMESTAMP)";
                 SqlCommand command2 = new SqlCommand(insertar_usuario, conn);
                 command2.ExecuteNonQuery();

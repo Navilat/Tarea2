@@ -2,3 +2,13 @@ C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.dll
 C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.pdb
 C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.dll
 C:\Users\Nacho\Documents\BD_tarea2\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.pdb
+C:\Documents and Settings\Administrador\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.dll
+C:\Documents and Settings\Administrador\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.pdb
+C:\Documents and Settings\Administrador\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.dll
+C:\Documents and Settings\Administrador\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.pdb
+E:\Archivos\UTFSM\Bases de Datos\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.dll
+E:\Archivos\UTFSM\Bases de Datos\Tarea2\Tarea2_10\Tarea2_10\bin\Tarea2_10.pdb
+E:\Archivos\UTFSM\Bases de Datos\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\ResolveAssemblyReference.cache
+E:\Archivos\UTFSM\Bases de Datos\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.dll
+E:\Archivos\UTFSM\Bases de Datos\Tarea2\Tarea2_10\Tarea2_10\obj\Debug\Tarea2_10.pdb
