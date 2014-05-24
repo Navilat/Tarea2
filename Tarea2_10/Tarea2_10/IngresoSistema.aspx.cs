@@ -16,7 +16,7 @@ namespace Tarea2_10
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("Iniciar_sesion.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
