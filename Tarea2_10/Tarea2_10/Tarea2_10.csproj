@@ -57,6 +57,7 @@
     </Content>
     <Content Include="IngresoSistema.aspx" />
     <Content Include="Iniciar_sesion.aspx" />
+    <Content Include="Pagina_principal.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -80,6 +81,13 @@
     </Compile>
     <Compile Include="Iniciar_sesion.aspx.designer.cs">
       <DependentUpon>Iniciar_sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagina_principal.aspx.cs">
+      <DependentUpon>Pagina_principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina_principal.aspx.designer.cs">
+      <DependentUpon>Pagina_principal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.aspx.cs">

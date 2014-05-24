@@ -7,10 +7,12 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
 
+
 namespace Tarea2_10
 {
     public partial class Iniciar_sesion : System.Web.UI.Page
     {
+        public static string usuario;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,7 +22,7 @@ namespace Tarea2_10
         {
             try
             {
-
+                usuario = TextBoxUN.Text;
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistroConnectionString"].ConnectionString);
                 conn.Open();
                 int contador;
@@ -36,7 +38,7 @@ namespace Tarea2_10
                 }
                 else if(contador == 1)
                 {
-                    Response.Redirect("IngresoSistema.aspx"); //TEMPORAL!! luego redirecto -> pagina inicio con usuario validado.
+                    Response.Redirect("Pagina_principal.aspx"); 
                 }
 
             }
