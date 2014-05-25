@@ -22,8 +22,7 @@
         .style4
         {
             width: 152px;
-            text-align: center;
-        }
+            }
     </style>
 </head>
 <body>
@@ -36,7 +35,7 @@
                     &nbsp;</td>
                 <td class="style3">
                     <asp:HyperLink ID="UserLink" runat="server" ForeColor="#0066FF" 
-                        NavigateUrl="~/IngresoSistema.aspx" style="text-align: center">HyperLink</asp:HyperLink>
+                        NavigateUrl="~/Perfil.aspx" style="text-align: center">HyperLink</asp:HyperLink>
                 </td>
                 <td class="style4">
                     <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#0066FF" 
@@ -51,5 +50,8 @@
     
     </div>
     </form>
+    <p>
+                    &lt;&lt;Lista de categorías públicas: &gt;&gt;<br />
+                    *Categoría 1 - Total del temas - Total de mensajes - Último tema comentado.</p>
 </body>
 </html>
