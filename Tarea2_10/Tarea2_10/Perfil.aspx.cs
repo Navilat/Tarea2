@@ -24,9 +24,9 @@ namespace Tarea2_10
                 reader.Read();
                 
                 LabelNombre.Text = reader["nombre"].ToString();
-                LabelEdad.Text = reader["fecha_nacimiento"].ToString();
+                LabelEdad.Text = reader["fecha_nacimiento"].ToString().Remove(10);
                 LabelSexo.Text = reader["sexo"].ToString();
-                LabelFechaReg.Text = reader["fecha_registro"].ToString();
+                LabelFechaReg.Text = reader["fecha_registro"].ToString().Remove(10);
                 LabelNComentarios.Text = reader["cantidad_comentarios"].ToString();
 
                 ImageAvatar.ImageUrl = reader["avatar_url"].ToString();
@@ -50,6 +50,11 @@ namespace Tarea2_10
             {
 
             }
+        }
+
+        protected void ButtonEditarPerfil_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Editar_Perfil.aspx");
         }
 
     }

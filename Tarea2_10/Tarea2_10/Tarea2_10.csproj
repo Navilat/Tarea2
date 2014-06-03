@@ -55,6 +55,7 @@
     <Content Include="App_Data\DatabaseTarea2_log.ldf">
       <DependentUpon>DatabaseTarea2.mdf</DependentUpon>
     </Content>
+    <Content Include="Editar_Perfil.aspx" />
     <Content Include="IngresoSistema.aspx" />
     <Content Include="Iniciar_sesion.aspx" />
     <Content Include="Pagina_principal.aspx" />
@@ -69,6 +70,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editar_Perfil.aspx.cs">
+      <DependentUpon>Editar_Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editar_Perfil.aspx.designer.cs">
+      <DependentUpon>Editar_Perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="IngresoSistema.aspx.cs">
       <DependentUpon>IngresoSistema.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

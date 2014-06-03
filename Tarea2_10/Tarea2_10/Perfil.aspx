@@ -79,10 +79,11 @@
         <tr>
             <td class="style2">
                 <asp:HyperLink ID="HyperLinkBandejaEntrada" runat="server" 
-                    BorderColor="#0066FF" ForeColor="#0066FF" style="font-weight: 700">HyperLink</asp:HyperLink>
+                    BorderColor="#0066FF" ForeColor="#0066FF" style="font-weight: 700">Bandeja de entrada</asp:HyperLink>
             </td>
             <td class="style5" style="text-align: center">
-                <asp:Button ID="ButtonEditarPerfil" runat="server" Text="Editar perfil" />
+                <asp:Button ID="ButtonEditarPerfil" runat="server" Text="Editar perfil" 
+                    onclick="ButtonEditarPerfil_Click" />
             </td>
         </tr>
     </table>
