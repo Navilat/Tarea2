@@ -42,7 +42,7 @@
         .style23
         {
             height: 48px;
-            width: 234px;
+            width: 232px;
             text-align: center;
         }
         .style24
@@ -53,12 +53,12 @@
         .style25
         {
             height: 47px;
-            width: 234px;
+            width: 232px;
         }
         .style26
         {
             height: 39px;
-            width: 234px;
+            width: 232px;
         }
     </style>
 </head>
@@ -93,11 +93,12 @@
         </tr>
         <tr>
             <td class="style19">
-            </td>
+                &nbsp;</td>
             <td class="style23">
                 <asp:Button ID="ButtonIniciar_sesion" runat="server" 
                     onclick="ButtonIniciar_sesion_Click" style="text-align: center" 
                     Text="Iniciar sesión" Width="165px" />
+                <br />
             </td>
             <td class="style24">
             </td>

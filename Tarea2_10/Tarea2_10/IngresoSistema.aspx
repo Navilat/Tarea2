@@ -41,11 +41,21 @@
             <tr>
                 <td align="center" style="text-align: left">
                     &lt;&lt;Lista de categorías públicas: &gt;&gt;<br />
-                    *Categoría 1 - Total del temas - Total de mensajes - Último tema comentado.</td>
+                    *Categoría 
+                    - Descripción - Total del temas - Total de mensajes - Último tema comentado.</td>
             </tr>
         </table>
     
     </div>
+    <asp:ListBox ID="ListBox1" runat="server" EnableTheming="True" Width="107px">
+    </asp:ListBox>
+    <asp:ListBox ID="ListBox2" runat="server" EnableTheming="True" Width="231px">
+    </asp:ListBox>
+    <asp:ListBox ID="ListBox3" runat="server" EnableTheming="True" Width="39px">
+    </asp:ListBox>
+    <asp:ListBox ID="ListBox4" runat="server" EnableTheming="True" Width="36px">
+    </asp:ListBox>
+    <asp:ListBox ID="ListBox5" runat="server" Width="139px"></asp:ListBox>
     </form>
 </body>
 </html>

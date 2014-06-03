@@ -49,7 +49,7 @@ namespace Tarea2_10
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            
+
             try
             {
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistroConnectionString"].ConnectionString);
@@ -58,13 +58,16 @@ namespace Tarea2_10
                 String update_usuario = "update Usuario set avatar_url = '" + TextBoxAvatar.Text + "', contraseña = '" + TextBoxNPass.Text + "', fecha_nacimiento = '" + TextBoxFecha.Text + "' where nombre = '" + Iniciar_sesion.usuario + "'";
                 SqlCommand command = new SqlCommand(update_usuario, conn);
                 command.ExecuteNonQuery();
-                
+
                 conn.Close();
-               
+
             }
             catch (Exception ex)
             {
                 Response.Write("ERROR");
+            }
+            finally {
+                Response.Redirect("Perfil.aspx");
             }
         }
 
