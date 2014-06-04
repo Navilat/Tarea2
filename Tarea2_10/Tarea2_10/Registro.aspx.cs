@@ -65,6 +65,12 @@ namespace Tarea2_10
                 command2.ExecuteNonQuery();
                 Response.Write("REGISTRO COMPLETADO CORRECTAMENTE!");
                 conn.Close();
+
+                conn.Open();
+                String crear_bandeja = "insert into Buzon_Entrada (id_buzon, id_usuario, mensajes, mensajes_sin_leer) values (" + contador2 + ", " + contador2 + ", "+0+","+0+")";
+                command2 = new SqlCommand(crear_bandeja, conn);
+                command2.ExecuteNonQuery();
+                conn.Close();
             }
             catch (Exception ex)
             {

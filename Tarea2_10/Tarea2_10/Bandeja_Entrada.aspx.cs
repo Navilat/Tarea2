@@ -50,6 +50,10 @@ namespace Tarea2_10
 
                 LabelN_mensajes.Text = reader["mensajes"].ToString();
                 LabelMensajes_SL.Text = reader["mensajes_sin_leer"].ToString();
+                ListBoxAsunto.Rows = Convert.ToInt32(LabelN_mensajes.Text);
+                ListBoxFecha.Rows = Convert.ToInt32(LabelN_mensajes.Text);
+                ListBoxRemitente.Rows = Convert.ToInt32(LabelN_mensajes.Text);
+                ListBoxLeido.Rows = Convert.ToInt32(LabelN_mensajes.Text);
 
                 conn.Close();
 
@@ -57,6 +61,11 @@ namespace Tarea2_10
             catch (Exception ex)
             {
             }
+        }
+
+        protected void ButtonRedactar_Click(object sender, EventArgs e)
+        {
+            PanelMensaje.Visible = true;
         }
     }
 }
