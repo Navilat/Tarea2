@@ -9,7 +9,7 @@
         .style1
         {
             width: 100%;
-            height: 162px;
+            height: 59px;
         }
         .style2
         {
@@ -47,15 +47,42 @@
         </table>
     
     </div>
-    <asp:ListBox ID="ListBox1" runat="server" EnableTheming="True" Width="107px">
+    <asp:ListBox ID="ListBox1" runat="server" EnableTheming="True" Width="176px">
     </asp:ListBox>
-    <asp:ListBox ID="ListBox2" runat="server" EnableTheming="True" Width="231px">
+    <asp:ListBox ID="ListBox2" runat="server" EnableTheming="True" Width="423px">
     </asp:ListBox>
     <asp:ListBox ID="ListBox3" runat="server" EnableTheming="True" Width="39px">
     </asp:ListBox>
     <asp:ListBox ID="ListBox4" runat="server" EnableTheming="True" Width="36px">
     </asp:ListBox>
-    <asp:ListBox ID="ListBox5" runat="server" Width="139px"></asp:ListBox>
+    <asp:ListBox ID="ListBox5" runat="server" Width="177px"></asp:ListBox>
+    <p>
+        <asp:Button ID="Button3" runat="server" onclick="Button3_Click" Text="Ir" 
+            Width="70px" />
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    </p>
+    
+        <table class="style1">
+            <tr>
+                <td align="center" style="text-align: left">
+                    &lt;&lt;Lista de 
+                    temas públicos: &gt;&gt;<br />
+                    *Tema 
+                    - Autor - Descripción - Total de comentarios</td>
+            </tr>
+        </table>
+    
+    <asp:ListBox ID="lbTemas_1" runat="server" Visible="False" Width="180px">
+    </asp:ListBox>
+    <asp:ListBox ID="lbTemas_2" runat="server" Visible="False" Width="135px">
+    </asp:ListBox>
+    <asp:ListBox ID="lbTemas_3" runat="server" Visible="False" Width="490px">
+    </asp:ListBox>
+    <asp:ListBox ID="lbTemas_4" runat="server" Visible="False" Width="44px">
+    </asp:ListBox>
+    <asp:Button ID="Boton_EliminarTema" runat="server" Text="Eliminar Tema" 
+        Visible="False" />
     </form>
-</body>
+    
+        </body>
 </html>
