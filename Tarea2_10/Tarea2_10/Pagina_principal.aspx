@@ -39,7 +39,7 @@
                 </td>
                 <td class="style4">
                     <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#0066FF" 
-                        NavigateUrl="~/IngresoSistema.aspx">Bandeja de entrada</asp:HyperLink>
+                        NavigateUrl="~/Bandeja_Entrada.aspx">Bandeja de entrada</asp:HyperLink>
                 </td>
                 <td style="text-align: center">
                     <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#0066FF" 
