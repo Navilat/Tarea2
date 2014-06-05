@@ -157,6 +157,15 @@ namespace Tarea2_10 {
         protected global::System.Web.UI.WebControls.ListBox ListBoxRemitente;
         
         /// <summary>
+        /// Control ListBoxRemitenteNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxRemitenteNombre;
+        
+        /// <summary>
         /// Control ListBoxAsunto.
         /// </summary>
         /// <remarks>
@@ -182,5 +191,23 @@ namespace Tarea2_10 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBoxLeido;
+        
+        /// <summary>
+        /// Control ButtonVerPerfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonVerPerfil;
+        
+        /// <summary>
+        /// Control ButtonVerMensaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonVerMensaje;
     }
 }

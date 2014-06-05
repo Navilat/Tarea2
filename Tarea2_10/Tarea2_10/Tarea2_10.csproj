@@ -59,6 +59,7 @@
     <Content Include="Editar_Perfil.aspx" />
     <Content Include="IngresoSistema.aspx" />
     <Content Include="Iniciar_sesion.aspx" />
+    <Content Include="Mensaje_privado.aspx" />
     <Content Include="Pagina_principal.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="Registro.aspx" />
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="Iniciar_sesion.aspx.designer.cs">
       <DependentUpon>Iniciar_sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_privado.aspx.cs">
+      <DependentUpon>Mensaje_privado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje_privado.aspx.designer.cs">
+      <DependentUpon>Mensaje_privado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pagina_principal.aspx.cs">
       <DependentUpon>Pagina_principal.aspx</DependentUpon>

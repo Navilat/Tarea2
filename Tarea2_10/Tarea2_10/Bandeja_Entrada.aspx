@@ -28,6 +28,11 @@
             width: 50px;
             text-align: center;
         }
+        .style9
+        {
+            width: 52px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +71,7 @@
     <asp:SqlDataSource ID="SqlDataSourceBandeja_Entrada" runat="server" 
         ConnectionString="<%$ ConnectionStrings:RegistroConnectionString %>" 
         SelectCommand="SELECT * FROM [Buzon_Entrada]"></asp:SqlDataSource>
-    <asp:Panel ID="PanelMensaje" runat="server" Visible="False">
+    <asp:Panel ID="PanelMensaje" runat="server" Visible="False" BackColor="White">
         <asp:Label ID="LabelPara" runat="server" Text="Para: " Width="70px"></asp:Label>
         <asp:TextBox ID="TextBoxPara" runat="server" Width="330px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
@@ -82,10 +87,13 @@
         <asp:TextBox ID="TextBoxMensaje" runat="server" Height="169px" 
             TextMode="MultiLine" Width="400px"></asp:TextBox>
         <br />
-        <asp:Button ID="ButtonEnviar" runat="server" Text="Enviar" Width="120px" />
+        <asp:Button ID="ButtonEnviar" runat="server" Text="Enviar" Width="120px" 
+            onclick="ButtonEnviar_Click" />
     </asp:Panel>
     <table class="style1">
         <tr>
+            <td class="style9">
+                &nbsp;</td>
             <td class="style7">
                 Remitente:</td>
             <td class="style7">
@@ -98,8 +106,12 @@
                 &nbsp;</td>
         </tr>
         <tr>
+            <td class="style9">
+                <asp:ListBox ID="ListBoxRemitente" runat="server" Width="38px"></asp:ListBox>
+            </td>
             <td class="style7">
-                <asp:ListBox ID="ListBoxRemitente" runat="server" Width="200px"></asp:ListBox>
+                <asp:ListBox ID="ListBoxRemitenteNombre" runat="server" Width="200px">
+                </asp:ListBox>
             </td>
             <td class="style7">
                 <asp:ListBox ID="ListBoxAsunto" runat="server" Width="200px"></asp:ListBox>
@@ -114,6 +126,8 @@
                 &nbsp;</td>
         </tr>
         <tr>
+            <td class="style9">
+                &nbsp;</td>
             <td class="style7">
                 Remitente:</td>
             <td class="style7">
@@ -122,6 +136,24 @@
                 Fecha de envío:</td>
             <td class="style8">
                 Leído:</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style9">
+                &nbsp;</td>
+            <td class="style7">
+                <asp:Button ID="ButtonVerPerfil" runat="server" onclick="ButtonVerPerfil_Click" 
+                    Text="Ver perfil seleccionado" />
+            </td>
+            <td class="style7">
+                <asp:Button ID="ButtonVerMensaje" runat="server" 
+                    onclick="ButtonVerMensaje_Click" Text="Ver mensaje" Width="200px" />
+            </td>
+            <td class="style7">
+                &nbsp;</td>
+            <td class="style8">
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>
