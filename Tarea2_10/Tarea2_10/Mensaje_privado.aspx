@@ -36,7 +36,7 @@
             <td class="style2">
                 Enviado por:</td>
             <td>
-&nbsp;<asp:Label ID="LabelNombre" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="LabelNombre" runat="server" Text="Label"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -66,7 +66,6 @@
                 &nbsp;</td>
             <td>
                 <br />
-                <br />
                 <asp:Button ID="ButtonResponder" runat="server" onclick="ButtonResponder_Click" 
                     Text="Responder" Width="200px" />
             </td>
@@ -89,11 +88,15 @@
                 <td class="style4">
                 </td>
                 <td class="style5">
-                    <asp:Button ID="ButtonEnviar" runat="server" Text="Enviar" Width="200px" />
+                    <asp:Button ID="ButtonEnviar" runat="server" Text="Enviar" Width="200px" 
+                        onclick="ButtonEnviar_Click" />
                 </td>
             </tr>
         </table>
     </asp:Panel>
+    <asp:Button ID="ButtonVolver" runat="server" BackColor="#FFFF66" 
+        ForeColor="Blue" onclick="Button1_Click" style="font-weight: 700" 
+        Text="Volver a bandeja de entrada" Width="241px" />
     </form>
 </body>
 </html>

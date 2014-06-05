@@ -80,6 +80,7 @@ namespace Tarea2_10
                 ListBoxFecha.Rows = Convert.ToInt32(LabelN_mensajes.Text);
                 ListBoxRemitente.Rows = Convert.ToInt32(LabelN_mensajes.Text);
                 ListBoxLeido.Rows = Convert.ToInt32(LabelN_mensajes.Text);
+                ListBoxRemitenteNombre.Rows = Convert.ToInt32(LabelN_mensajes.Text);
 
                 conn.Close();
 

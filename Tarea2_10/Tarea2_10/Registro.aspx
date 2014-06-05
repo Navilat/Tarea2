@@ -170,6 +170,8 @@
     <asp:SqlDataSource ID="SqlDataSourceRegistration" runat="server" 
         ConnectionString="<%$ ConnectionStrings:RegistroConnectionString %>" 
         SelectCommand="SELECT * FROM [Usuario]"></asp:SqlDataSource>
+    <asp:Button ID="ButtonVolver" runat="server" onclick="ButtonVolver_Click" 
+        Text="Volver" Width="191px" />
     </form>
 </body>
 </html>

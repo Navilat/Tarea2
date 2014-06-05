@@ -79,5 +79,10 @@ namespace Tarea2_10
 
             
         }
+
+        protected void ButtonVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("IngresoSistema.aspx");
+        }
     }
 }
