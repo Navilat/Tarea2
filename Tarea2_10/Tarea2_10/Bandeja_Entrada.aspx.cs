@@ -12,7 +12,7 @@ namespace Tarea2_10
 {
     public partial class Bandeja_Entrada : System.Web.UI.Page
     {
-        public static string id_usuario, id_destino, asunto;
+        public static string id_usuario, id_destino, asunto, id_otro;
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -171,7 +171,8 @@ namespace Tarea2_10
 
         protected void ButtonVerPerfil_Click(object sender, EventArgs e)
         {
-
+            id_otro = ListBoxRemitente.SelectedItem.Text;
+            Response.Redirect("Perfil_Otro.aspx");
         }
 
        
